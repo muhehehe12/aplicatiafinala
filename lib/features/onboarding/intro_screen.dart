@@ -115,7 +115,7 @@ class _IntroScreenState extends State<IntroScreen> {
                 children: [
                   const SizedBox(height: 18),
                   const Text(
-                    "LOG IN AND LOCK IN",
+                    "LOG I666N AND LOCK IN",
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: Colors.white,
