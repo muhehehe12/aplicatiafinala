@@ -1,12 +1,15 @@
 buildscript {
-    ext.kotlin_version = '1.7.10'
+    // 1. Updated Kotlin version for compatibility with newer AndroidX
+    ext.kotlin_version = '1.9.24' 
     repositories {
         google()
         mavenCentral()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.0'
+        // 2. Updated to 8.7.0 (or 8.9.1 if you have the latest Android Studio)
+        // This matches the requirement of the error you received
+        classpath 'com.android.tools.build:gradle:8.7.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
