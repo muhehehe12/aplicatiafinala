@@ -41,7 +41,7 @@ class IntroScreen extends StatelessWidget {
                   Column(
                     children: [
                       Text(
-                        "( App name ) is ready to build your 2026 version.\nJust 1 more step.",
+                        "( acum megre,daca vezi) is ready to build your 2026 version.\nJust 1 more step.",
                         textAlign: TextAlign.center,
                         style: TextStyle(color: Colors.white.withOpacity(0.9), fontSize: 16),
                       ),
