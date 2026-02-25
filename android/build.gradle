@@ -1,17 +1,10 @@
-buildscript {
-    // 1. Updated Kotlin version for compatibility with newer AndroidX
-    ext.kotlin_version = '1.9.24' 
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        // 2. Updated to 8.7.0 (or 8.9.1 if you have the latest Android Studio)
-        // This matches the requirement of the error you received
-        classpath 'com.android.tools.build:gradle:8.7.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
+// Project-level build.gradle
+plugins {
+    id "com.android.application" version "8.7.0" apply false
+    id "com.android.library" version "8.7.0" apply false
+    id "org.jetbrains.kotlin.android" version "1.9.24" apply false
+    // This is the magic line that fixes the Flutter error
+    id "dev.flutter.flutter-gradle-plugin" version "1.0.0" apply false
 }
 
 allprojects {
